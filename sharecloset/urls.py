@@ -18,8 +18,4 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-<<<<<<< HEAD
-    #url(r'^&/', ),
-=======
->>>>>>> 9a44d5165f4e781a072d9dfe3253cfb22f44209e
 ]
