@@ -37,7 +37,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    #third party
+    'debug_toolbar',
+    'bootstrap3',
+    #local
     'product',
+    
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -129,4 +134,5 @@ STATIC_URL = '/static/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
 
