@@ -1,111 +1,81 @@
-   
-<head>
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
- <style>
-      .modal .modal-header, .modal h4, .modal .close {
-          background-color: #123456;
-          color:red;
-          text-align: center;
-          font-size: 30px;
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <title>BRICLO</title>
+    <style>
+      .bar div {
+        float:left;
       }
-      .modal .modal-footer {
-          background-color: #123456;
+      .bar div * {
+        float:left;
       }
-      .modal-content-gray {
-        background-color: #312312;
+      .bar div ul {
+        list-style-type:none;
+        margin-left:10px;
       }
-      .search-modal {
-        top:40%;
+      .bar div ul li{
+        float:left;
+        margin-right:2px;
       }
-
-      .search-modal .modal-body {
-        padding: 10px;
-        text-align: center;
+      .main_box1 div {
+        height:300px;
+        width:400px;
+        background-color:grey;
+        border:black 2px ;
+        float:left;
       }
-      .modal-body .btn-sm {
-        padding: 5px 8px;
-        margin: 2px;
-      }
-     #navbar{
-      background-color: white;
-      border-color: white;
-     }
-
-  </style>
+      .main_box2 {
+        height:300px;
+        width:400px;
+        background-color:grey;
+        border:;
+        clear:left;
+      }  
+    </style>
   </head>
-<body>
-    <!-- Navigation -->
-    <nav id ="navbar" class="navbar navbar-inverse navbar-fixed-top" role="navigation" \>
-        <div class="container"  >
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/">BRICLO</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-                {% if user.is_authenticated %}
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ user }} <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            {% if user.profile.is_store_owner %}
-                            <li>
-                                <a href="">업체 등록하기</a>
-                            </li>
-                            <li>
-                                <a href="">마이페이지</a>
-                            </li>
-                            <li>
-                                <a href="">내가 등록한 가게</a>
-                            </li>
-                            <li>
-                                <a href="">로그아웃</a>
-                            </li>
-                            {% else %}
-                            <li>
-                                <a href="">마이페이지</a>
-                            </li>
-                            <li>
-                                <a href="">찜목록</a>
-                            </li>
-                            <li>
-                                <a href="">로그아웃</a>
-                            </li>
-                            {% endif %}
-                        </ul>
-                    </li>
-                </ul>
-                {% else %}
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                         <a href="#" id="loginBtn">로그인</a>
-                    </li>
-                    <li>
-                        <a href="">회원가입</a>
-                    </li>
-                </ul>
-                {% endif %}
-
-            </div>
-            <!-- /.navbar-collapse -->
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="bar">
+        <div>
+          <img src="logo.jpg" height="50px" width="100px">
+          <h1>BRICLO</h1>
         </div>
-        <!-- /.container -->
+        <div>
+          <ul>
+            <li>코디</li>
+            <li>상의</li> 
+            <li>하의</li>
+          </ul>
+          <ul>
+            <li>Login</li>
+            <li>/</li>
+            <li>Register</li>
+            <li>브리클로 소개</li>
+          </ul>
+          <ul>
+            <li>Search</li>
+          </ul>
+        </div>
+      </div>
     </nav>
-</body>
 
+    <div class="main_box1">
+      <div>
+        빌려주는 사람
+      </div>
+      <div>
+        빌리는 사람
+      </div>
+    </div>
+    <div class="main_box2">
+        브리클로 소개
+    </div>
 
-
-
-
-
-
-
-
-
+  </body>
+</html>
