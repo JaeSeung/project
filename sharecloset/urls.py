@@ -18,11 +18,12 @@ from django.contrib import admin
 from django.conf import settings
 from django.conf.urls.static import static
 from django.shortcuts import redirect
-
+from product import views
 
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^$', views.intro, name="intro"),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

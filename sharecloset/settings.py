@@ -129,7 +129,7 @@ USE_TZ = True
 
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'askdjango', 'static')]
+    os.path.join(BASE_DIR, 'sharecloset', 'static')]
 STATIC_URL = '/static/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
