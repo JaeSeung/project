@@ -1,172 +1,95 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <title>BRICLO</title>
     <style>
-      .bar div {
-        float:left;
+      .bar {
+        z-index:2;
+        width:100%;
+        height:15%;
+        position:fixed;
+        top:0;
+        background-color:rgba(255,255,255,0.3);
+        display:table-cell;
+        vertical-align:middle;
       }
-      .bar div * {
+      .bar div{
         float:left;
+        position:relative;
       }
-      .bar div ul {
+      .bar div li{
+        float:left;
+        font-size:1em;
         list-style-type:none;
-        margin-left:10px;
       }
-      .bar div ul li{
-        float:left;
-        margin-right:2px;
+      .container {
+        z-index:1;
+        width:100%;
+        position:absolute;
+        top:20%;
       }
-      .main_box1 div {
-        height:300px;
-        width:400px;
-        background-color:grey;
-        border:black 2px ;
-        float:left;
-      }
-      .main_box2 {
-        height:300px;
-        width:400px;
-        background-color:grey;
-        border:;
+      .part{
         clear:left;
-      }  
+        width:100%;
+        height:300px;
+      }
+      .container_div1{
+        height:90%;
+        width:40%;
+        float:left;
+        margin-left:5%;
+        position:relative;
+        left:5%;
+        top:5%;
+        border:black 1px solid;
+      }
+      .container_div2{
+        height:90%;
+        width:90%;
+        position:relative;
+        left:5%;
+        top:5%;
+        border:black 1px solid;
+      }
     </style>
   </head>
 
   <body>
-    <nav class="navbar navbar-default">
-      <div class="bar">
-        <div>
-          <img src="logo.jpg" height="50px" width="100px">
-          <h1>BRICLO</h1>
-        </div>
-        <div>
-          <ul>
-            <li>코디</li>
-            <li>상의</li> 
-            <li>하의</li>
-          </ul>
-          <ul>
-            <li>Login</li>
-            <li>/</li>
-            <li>Register</li>
-            <li>브리클로 소개</li>
-          </ul>
-          <ul>
-            <li>Search</li>
-          </ul>
-        </div>
+    <div class="bar">
+      <div style="width:30%;height:80%;top:10%;left:0%;">
+        <img src="https://jandi-box.com/files-thumb/11998765/8a2105ce648dd31837d890fc506f145d.jpg?size=640" width=100% height=100%>
       </div>
-    </nav>
-=======
-
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#"><img alt="" src="..."></a>
+      <div style="width:70%;top:40%;">
+        <li style="margin-left:3em;margin-right:2em">코디</li>
+        <li style="margin-right:2em">상의</li> 
+        <li style="margin-right:5em">하의</li>
+        <li style="margin-right:1em">Login</li>
+        <li style="margin-right:1em">/</li>
+        <li style="margin-right:3em">Register</li>
+        <li style="margin-right:10em">브리클로 소개</li>
+        <li>Search</li>
+      </div>
     </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+<div class="container">
+  <div class="part" style="background-color:white">
+    <div class="container_div1">lender</div>
+    <div class="container_div1">renter</div>
+  </div>
 
-<div class = container/ style="width:100%">
+  <div class="part" style="background-color:grey">
+    <div class="container_div2">Image</div>
+  </div>
 
-    <div style ="float:left; margin-left:5%; width:40%; height:30% ;background-color:red; padding:5px">
-    hlloe 
-    </div>
-    <div style="float:left;margin-left:5%; margin-bottom:5%;width:40%; height:30%;  background-color:blue; padding:5px">
-    hello    
-    </div>
+  <div class="part" style="background-color:lightblue">
+    <div class="container_div2">팀원소개페이지</div>
+  </div>
 
-
-    <div style="clear:both;width:85%; height:50%; background-color:green;margin:5%">
-   hello
-     </div>
-
-    <div style="clear:both;width:85%; height:50%; background-color:green;margin:5%">
-   hello
-     </div>
-
-    <div style="clear:both;width:85%; height:50%; background-color:green;margin:5%">
-   hello
-     </div>
-
-
-
-
-
-
-
+  <div class="part" style="background-color:white">
+    <div class="container_div2">FOOTFOOTFOOT</div>
+  </div>
 </div>
-
->>>>>>> ffbd6b5d2bc76b8427ecf70de23623c735160986
-
-    <div class="main_box1">
-      <div>
-        빌려주는 사람
-      </div>
-      <div>
-        빌리는 사람
-      </div>
-    </div>
-    <div class="main_box2">
-        브리클로 소개
-    </div>
 
   </body>
 </html>
