@@ -1,8 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <title>BRICLO</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="briclo Tech dir" content="지금은 옷을 빌려드리지만, 갑자기 우주선을 쏘아올릴 수도 있는 저희는 Briclo입니다">
+    <title>B R I C L O</title>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/logo-nav.css" rel="stylesheet">
     <style>
       .bar {
         z-index:2;
@@ -52,7 +61,82 @@
         top:5%;
         border:black 1px solid;
       }
+        /* Search Bar */
+      .box{
+        
+        width: 150px;
+        height: 50px;
+      }
+      .container-2{
+        width: 150px;
+        vertical-align: middle;
+        white-space: nowrap;
+        position: relative;
+      }
+      .container-2 input#search{
+        width: 50px;
+        height: 30px;
+        background: #818181;
+        border: none;
+        font-size: 9pt;
+        float: left;
+        color: #262626;
+        padding-left: 35px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        color: #fff;
+ 
+        -webkit-transition: width .55s ease;
+        -moz-transition: width .55s ease;
+        -ms-transition: width .55s ease;
+        -o-transition: width .55s ease;
+        transition: width .55s ease;
+      }
+      /* '검색하기' 설정section */
+      .container-2 input#search::-webkit-input-placeholder {
+        color: #F6F6F6;
+      } 
+      .container-2 input#search:-moz-placeholder { /* Firefox 18- */
+        color: #F6F6F6;  
+      } 
+      .container-2 input#search::-moz-placeholder {  /* Firefox 19+ */
+        color: #F6F6F6;  
+      } 
+      .container-2 input#search:-ms-input-placeholder {  
+        color: #F6F6F6;  
+      }
+      .container-2 .icon{
+        position: absolute;
+        top: 50%;
+        margin-left: 17px;
+        margin-top: 17px;
+        z-index: 1;
+        color: #4f5b66;
+      }
+      .container-2 input#search:focus, .container-2 input#search:active{
+        outline:none;
+        width: 150px;
+      } 
+      .container-2:hover input#search{
+        width: 150px;
+      } 
+      .container-2:hover .icon{
+        color: #93a2ad;
+      }
+      #searchicon {
+        color: white;
+        width: 40px;
+        height: 40px;
+      }
+/* end search bar */
     </style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
   </head>
 
   <body>
@@ -68,7 +152,20 @@
         <li style="margin-right:1em">/</li>
         <li style="margin-right:3em">Register</li>
         <li style="margin-right:10em">브리클로 소개</li>
-        <li>Search</li>
+        <li>
+          <div class="navbar-left" style="margin:27px 0; background-color:red;">
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="box">
+                  <div class="container-2">
+                    <span class="icon"><i class="fa fa-search"></i></span>
+                    <input style="color:#F6F6F6;" type="search" id="search" placeholder="    검색하기">
+                    <span style="color: #818181;" class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </input>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </li>
       </div>
     </div>
 
