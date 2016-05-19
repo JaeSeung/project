@@ -46,7 +46,8 @@
     }
     .product_main_image{
     height : 100%;
-    }
+    width : 100%;
+     }
   </style>
 </head>
 <body>
@@ -68,14 +69,13 @@
 
   <div class="gallery">
      <p1 style="margin-left:39%;font-size:3em">CONTENTS</p1>
-   
+    <div class='row'>
     {% for product in product_list %}
-     <div class='row'>
                   <div>
                     <img class="product_main_image" src="{{ product.main_photo.url}}"/>
-                  </div>
-                    
+                  </div>  
     {% endfor %}
+     </div>
      <div class='row'><div>2</div><div></div><div></div><div></div></div>
      <div class='row'><div>3</div><div></div><div></div><div></div></div>
      <div class='row'><div>4</div><div></div><div></div><div></div></div>
