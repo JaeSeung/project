@@ -21,7 +21,7 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <nav style="background-color: white; border-color: white; z-index:2; position:fixed;" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -36,38 +36,39 @@
                     <img id="img-size" src="https://jandi-box.com/files-thumb/11998765/8a2105ce648dd31837d890fc506f145d.jpg?size=640" alt="Briclo Logo">
                 </a>
             </div>
+            
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li style="margin-left: 60px" class="li-size">                        
-                        <a href="#">코디</a>
-                    </li>
-                    <li class="li-size">
-                        <a href="#">상의</a>
-                    </li>
-                    <li class="li-size">
-                        <a href="#">하의</a>
-                    </li>
-                </ul>
-                <!-- search bar... -->
-                <div class="container-fluid">
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <div class="box">
-                            <div class="container-1">
-                                <span class="icon"><i class="fa fa-search"></i></span>
-                                <input type="search" id="search" placeholder="Search..." />
+                <div class="navbar-left">
+                    <ul class="nav navbar-nav">
+                        <li style="margin-left: 40px" class="li-size">
+                            <a href="#">코디</a>
+                        </li>
+                        <li class="li-size">
+                            <a href="#">상의</a>
+                        </li>
+                        <li class="li-size">
+                            <a href="#">하의</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-right">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li><a href="#">Login / Register</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>   
+                    <!-- Search Bar -->
+                    <div class="navbar-left" style="margin:27px 0">
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <div class="box">
+                                <div class="container-2">
+                                    <span class="icon"><i class="fa fa-search"></i></span>
+                                    <input style="color:black;" type="search" id="search" placeholder="    검색하기">
+                                    <span style="color: #818181;" class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                    </input>
+                                </div>
                             </div>
-                        </div>   
-                    <!--<form class="navbar-form navbar-right" role="search">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Search">
-                            </div>
-                            <button type="submit" class="btn btn-default">검색</button>
-                        </form>-->
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#">Login / Register</a></li>
-                            <li><a href="#">About</a></li>
-                        </ul>      
+                        </div>
                     </div>
                 </div>
             </div>
@@ -77,12 +78,22 @@
     </nav>
 
     <!-- Page Content -->
-    <div class="container">
-        <div class="row">
-            <div style="border:1px solid black" class="col-lg-12">
-                <h1 style="text-align:center;">Welcome to Briclo</h1>
-                <p>Note: You may need to adjust some CSS based on the size of your logo. The default logo size is 150x50 pixels.</p>
-            </div>
+    <div class="container_body">
+        <div class="part" style="background-color:white">
+            <div class="container_div1">lender</div>
+            <div class="container_div1">renter</div>
+        </div>
+
+        <div class="part" style="background-color:grey">
+            <div class="container_div2">Image</div>
+        </div>
+
+        <div class="part" style="background-color:lightblue">
+            <div class="container_div2">팀원소개페이지</div>
+        </div>
+
+        <div class="part" style="background-color:white">
+            <div class="container_div2">FOOTFOOTFOOT</div>
         </div>
     </div>
     <!-- /.container -->

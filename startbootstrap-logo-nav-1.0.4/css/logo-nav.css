@@ -27,7 +27,7 @@ body {
 }
 
 #img-size {
-	height: 70px;
+	height: 50px;
 	width: auto;
 	margin-top: 1px;
 }
@@ -35,4 +35,103 @@ body {
 .li-size {
 	padding-left: 15px;
 	padding-right: 15px;
+}
+
+/* Search Bar */
+.box{        
+    width: 150px;
+    height: 30px;
+}
+.container-2{
+    width: 150px;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+}
+.container-2 input#search{
+    width: 50px;
+    height: 30px;
+    background: #F6F4F2;
+    border: none;
+    font-size: 9pt;
+    float: left;
+    color: #262626;
+    padding-left: 35px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: #fff;
+ 
+    -webkit-transition: width .55s ease;
+    -moz-transition: width .55s ease;
+    -ms-transition: width .55s ease;
+    -o-transition: width .55s ease;
+    transition: width .55s ease;
+}
+/* '검색하기' 설정section */
+.container-2 input#search::-webkit-input-placeholder {
+    color: black;
+} 
+.container-2 input#search:-moz-placeholder { /* Firefox 18- */
+    color: black;  
+} 
+.container-2 input#search::-moz-placeholder {  /* Firefox 19+ */
+    color: black;  
+} 
+.container-2 input#search:-ms-input-placeholder {  
+    color: black;  
+}
+.container-2 .icon{
+	position: absolute;
+    top: 50%;
+    margin-left: 17px;
+    margin-top: 17px;
+    z-index: 1;
+    color: #4f5b66;
+}
+.container-2 input#search:focus, .container-2 input#search:active{
+    outline:none;
+    width: 150px;
+} 
+.container-2:hover input#search{
+    width: 150px;
+} 
+.container-2:hover .icon{
+    color: #93a2ad;
+}
+#searchicon {
+    color: white;
+    width: 40px;
+    height: 40px;
+}
+/* end search bar */
+
+.container_body {
+    z-index:1;
+    width:100%;
+    position:absolute;
+    top:20%;
+}
+.part{
+    clear:left;
+    width:100%;
+    height:300px;
+}
+.container_div1{
+    height:90%;
+    width:40%;
+    float:left;
+    margin-left:5%;
+    position:relative;
+    left:5%;
+    top:5%;
+    border:black 1px solid;
+}
+.container_div2{
+    height:90%;
+    width:90%;
+    position:relative;
+    left:5%;
+    top:5%;
+    border:black 1px solid;
 }
