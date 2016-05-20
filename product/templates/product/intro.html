@@ -1,40 +1,10 @@
-<!DOCTYPE html>
-<html>
+{% extends 'product/base.html' %}
+{% load staticfiles %}
+
+  {% block content %}
   <head>
-    <meta charset="UTF-8">
-    <title>BRICLO</title>
-    <style>
-      .bar {
-        z-index:2;
-        width:99%;
-        height:15%;
-        position:fixed;
-        top:0;
-        background-color:rgba(255,255,255,0.3);
-      }
-      .bar div{
-        float:left;
-        position:relative;
-      }
-      .bar div li{
-        float:left;
-        font-size:1em;
-        list-style-type:none;
-      }
-      .container {
-        z-index:1;
-        width:99%;
-        height:100%;
-        position:absolute;
-        top:15%;
-      }
-      .container div{
-        width:100%;
-      }
-      .container div div{
-        border:black 1px solid;
-      }
-    </style>
+     <link rel="stylesheet" type="text/css" href="{% static "product/intro.css" %}">
+
   </head>
 
   <body>
@@ -44,7 +14,7 @@
       </div>
       <div style="width:70%;top:40%;">
         <li style="margin-left:3em;margin-right:2em;color:#008DCC"><u>코디</u></li>
-        <li style="margin-right:2em">상의</li> 
+        <li style="margin-right:2em">상의</li>
         <li style="margin-right:5em">하의</li>
         <li style="margin-right:1em">Login</li>
         <li style="margin-right:1em">/</li>
@@ -75,3 +45,5 @@
 
   </body>
 </html>
+
+  {% endblock %}

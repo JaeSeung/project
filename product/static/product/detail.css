@@ -1,0 +1,44 @@
+.bar {
+      z-index:2;
+      width:100%;
+      height:15%;
+      position:fixed;
+      top:0;
+      background-color:rgba(255,255,255,0.3);
+      clear:both;
+    }
+    .bar div {
+      float:left;
+      position:relative;
+    }
+    .bar div li {
+      float:left;
+      font-size:1em;
+      list-style-type:none;
+    }
+    .gallery {
+      z-index:1;
+      width:100%;
+      position:relative;
+      clear:both;
+      top:15%;
+    }
+    .row{
+      position:relative;
+      left:10%;
+      height:24%;
+      width:80%;
+      clear:both;
+      margin-top:3%;
+    }
+    .row div{
+      width:20%;
+      height:100%;
+      border:1px solid black;
+      float:left;
+      margin-left:3%;
+    }
+    .product_main_image{
+    height : 100%;
+    width : 100%;
+     }

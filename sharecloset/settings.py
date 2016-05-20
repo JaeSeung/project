@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'bootstrap3',
     #local
     'product',
-    
+
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -61,7 +61,7 @@ ROOT_URLCONF = 'sharecloset.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templaes'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -84,7 +84,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'sharecloset',
-        'USER': 'izr8809',
+        'USER': 'postgres',
         'PASSWORD': 'sksqkqhd1',
         'HOST': 'localhost',
         'PORT': '',
