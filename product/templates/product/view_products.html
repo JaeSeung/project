@@ -13,11 +13,13 @@
     $(document).ready(function() {
     function checkScrollPosition() {
     if ($('.gallery').height() <= $(window).scrollTop() + $(window).height()) {
- $.ajax({
-        url: $('#get-next-products').attr('href'),
-
-    $(window).scroll(checkScrollPosition);
+         event.preventDefault();
+$.ajax({
+  url: $('#get-next-products').attr('href'),
     });
+    }}
+        $(window).scroll(checkScrollPosition);
+}
   //  $('body').on('click', '#get-next-products', function(event){
    //     event.preventDefault();
     //    $.ajax({
