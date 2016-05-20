@@ -25,6 +25,8 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.intro, name="intro"),
     url(r'^product/$', views.product_list, name="product_list"),
+    url(r'^product/(?P<next_pk>\d+)$', views.get_products, name='next-products')
+
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
