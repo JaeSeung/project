@@ -45,6 +45,7 @@ template {
 }
 a {
   background-color: transparent;
+  font-family: '함초록돋움';
 }
 a:active,
 a:hover {

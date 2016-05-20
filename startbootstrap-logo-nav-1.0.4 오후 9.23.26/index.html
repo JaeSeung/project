@@ -21,7 +21,7 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav style="background-color: white; border-color: white; z-index:2; position:fixed;" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <nav id="navstyle" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -63,13 +63,14 @@
                             <div class="box">
                                 <div class="container-2">
                                     <span class="icon"><i class="fa fa-search"></i></span>
-                                    <input style="color:black;" type="search" id="search" placeholder="    검색하기">
+                                    <input style="color:black;" type="search" id="search" placeholder="    Search">
                                     <span style="color: #818181;" class="glyphicon glyphicon-search" aria-hidden="true"></span>
                                     </input>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- end Search Bar -->                    
                 </div>
             </div>
             <!-- /.navbar-collapse -->
@@ -78,24 +79,28 @@
     </nav>
 
     <!-- Page Content -->
-    <div class="container_body">
-        <div class="part" style="background-color:white">
-            <div class="container_div1">lender</div>
-            <div class="container_div1">renter</div>
-        </div>
-
-        <div class="part" style="background-color:grey">
-            <div class="container_div2">Image</div>
-        </div>
-
-        <div class="part" style="background-color:lightblue">
-            <div class="container_div2">팀원소개페이지</div>
-        </div>
-
-        <div class="part" style="background-color:white">
-            <div class="container_div2">FOOTFOOTFOOT</div>
-        </div>
+  <div class="container_pagecontent">
+    <div style="background-color:white;height:40%;">
+        <a href="#">
+            <div class="content_text" style="float:left;width:45%;height:80%;margin-left:3%;margin-top:1.5%">lender</div>
+        </a>
+        <a href="#">
+            <div class="content_text" style="float:left;width:45%;height:80%;margin-left:3%;margin-top:1.5%">renter</div>
+        </a>
     </div>
+
+    <div style="background-color:#CDDAE5;height:70%;">
+        <div style="width:93%;height:100%;background-color:lightblue;margin-left:3%;">Image</div>
+    </div>
+
+    <div style="height:10%;background-color:white"></div>
+    <div style="height:50%;background-color:lightblue;">팀원소개홈페이지
+    </div>
+
+    <div style="height:10%;background-color:white;"></div>
+    <div style="height:50%;background-color:#173456;">Footer
+    </div>
+  </div>
     <!-- /.container -->
 
     <!-- jQuery -->

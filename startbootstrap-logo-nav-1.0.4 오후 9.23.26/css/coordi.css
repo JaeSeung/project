@@ -1,0 +1,28 @@
+.topbox {
+	width: 92%;
+	margin-top: 3%;
+	margin-left:4%;
+	height: 40px;
+	border-top:1px solid black;
+	border-bottom:1px solid black;
+}
+
+.boxcontent {
+	font-size: 14px;
+	list-style: none;
+	vertical-align: center;	
+}
+
+.boxcontent > li {
+	float: left;
+	line-height: 40px;
+	vertical-align: center;
+	text-align: center;
+	width: 130px;
+	font-family: '함초록돋움';
+}
+
+#coord_text {
+	font-size: 25px;
+	margin-left: 9%;
+}
