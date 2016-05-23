@@ -1,0 +1,49 @@
+{% extends 'home/base.html' %}
+{% load staticfiles %}
+
+  {% block content %}
+  <head>
+     <link rel="stylesheet" type="text/css" href="{% static "home/intro.css" %}">
+
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div style="background-color:white;height:40%;">
+        <a href="{% url "home:team_introduce" %}" style="text-decoration:none">
+          <div style="float:left;width:45%;height:80%;margin-left:3%;margin-top:1.5%">
+            lender
+          </div>
+        </a>
+
+        <a href="{% url "product:product_list" %}" style="text-decoration:none">
+          <div style="float:left;width:45%;height:80%;margin-left:3%;margin-top:1.5%">
+            renter
+          </div>
+        </a>
+      </div>
+
+      <div style="background-color:#EAF0F4;height:70%;">
+        <div style="width:93%;height:100%;background-color:#EAF0F4;margin-left:3%;">Image</div>
+      </div>
+
+      <div style="height:10%;background-color:white"></div>
+        <a href="{% url "home:team_introduce" %}" style="text-decoration:none">
+          <div style="height:50%;background-color:#EAF0F4;">팀원소개홈페이지
+          </div>
+        </a>
+
+      <div style="height:10%;background-color:white;">
+      </div>
+      
+      <div style="height:50%;background-color:#233444;">
+        Footer
+      </div>
+
+    </div>
+
+  </body>
+</html>
+
+  {% endblock %}

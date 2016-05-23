@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'bootstrap3',
     #local
     'product',
+    'home',
 
 ]
 
@@ -84,7 +85,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'sharecloset',
-        'USER': 'postgres',
+        'USER': 'izr8809',
         'PASSWORD': 'sksqkqhd1',
         'HOST': 'localhost',
         'PORT': '',
