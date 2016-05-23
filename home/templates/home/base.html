@@ -1,6 +1,6 @@
 {% load staticfiles %}
-
-<html lang="en">
+<!doctype html>
+<html>
 <head>
    <meta charset="UTF-8">
     <title>BRICLO</title>
@@ -12,39 +12,60 @@
   <div class="bar">
     <div style="width:30%;height:80%;top:10%;left:0%;">
      <a href="{% url "home.views.intro" %}">
-        <img  src="/media/logo.png" width=70% height=80% style=" margin-left:20%; margin-top:1.5%">
+        <img  src="{% static "home/img/logo.png" %}" width=80% height=80% style=" margin-left:20%; margin-top:2%">
      </a>
     </div>
-    <div style="width:70%;top:40%;">
+
+    <div style="font-size:130%; width:70%;top:20%">
+      
       <a href="{% url "product:product_list" %}">
-        <li style="margin-left:3em;margin-right:2em">
+        <li style=" margin-left:5em;margin-right:2em; margin-top:1.4%">
           코디
         </li>
       </a>
       
       <a href="{% url "product:product_top_list" %}">
-        <li style="margin-right:2em">
+        <li style="margin-right:2em; margin-top:1.4%">
           상의
         </li>
       </a>
       
       <a href="{% url "product:product_bottom_list" %}" >
-        <li style="margin-right:5em">
+        <li style="margin-right:2em; margin-top:1.4%">
           하의
         </li>
       </a>
       
-      <li style="margin-right:1em">Login</li>
+      <a href="{% url "product:product_bottom_list" %}" >
+        <li style="margin-right:6.5em; margin-top:1.4%">
+          SELL
+        </li>
+      </a>
+
+      <li style="margin-right:0.3em; margin-top:1.4%">Login</li>
       
-      <li style="margin-right:1em">/</li>
+      <li style="margin-right:0.3em; margin-top:1.4%">/</li>
       
-      <li style="margin-right:3em">Register</li>
+      <li style="margin-right:2em; margin-top:1.4%">Register</li>
 
       <a href="{% url "home:team_introduce" %}">
-        <li style="margin-right:10em">브리클로 소개</li>
+        <li style="margin-right:2em; margin-top:1.4%">브리클로 소개</li>
       </a>
+       <div style="margin-top:0%; float:left; width:20%; margin-top:1%;padding-right:1%">
+        <span style="float:left; width:25%; ">
+         <a href=""><img src = "{% static "home/img/info-icon.png" %}" width="60%" height="100 % "/></a>
+        </span>
+        <span style="float:left; width:25%;margin-top:1.7%;">
+         <img src = "{% static "home/img/search_icon.png" %}" width="45%" height="10%"  />
+        </span>
+        <span style="float:left; width:25%;margin-top:1.7%">
+         <img src = "{% static "home/img/help.png" %}" width="45%" style=""/>
+        </span>
+        <span style="float:left;width:25%;margin-top:1.7%">
+         <img src = "{% static "home/img/basket_icon.png" %}" width="45%" height="10%"/>
+        </span>
+        </div>
       
-      <li>Search</li>
     </div>
   </div>
   {% block content %}

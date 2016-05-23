@@ -11,11 +11,11 @@
         position:relative;
       }
       .bar div li{
+        margin-top:0.3%;
         float:left;
         font-size:1em;
         list-style-type:none;
       }
-a:link
 {color:black;}
 a:visited
 {color:black;}
