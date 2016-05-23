@@ -3,7 +3,7 @@
 
 {% block content %}
    <head>
-     <link rel="stylesheet" type="text/css" href="{% static "product/detail.css" %}">
+     <link rel="stylesheet" type="text/css" href="{% static "product/product_list.css" %}">
 
   </head>
   <div class="main_container">
@@ -12,9 +12,9 @@
       <div class = "product_list_left_container">
         <div class='row'>
         {% for product in product_list %}
-                      <div class = product>
-                        <img class="product_main_image" src="{{ product.main_photo.url}}"/>
-                      </div>
+                      <a href="{% url "product:product_top_detail" product.pk%}">
+                          <img class="product_main_image" src="{{ product.main_photo.url}}"/>
+                        </a>
         {% endfor %}
          </div>
        </div>
@@ -37,17 +37,6 @@
     </div>
   </div>
 
-  <script type="text/javascript">
-    $(document).ready(function() {
-    function checkScrollPosition() {
-    if ($('.gallery').height() <= $(window).scrollTop() + $(window).height()) {
-
-      $(".gallery").append("<div class='row'><div>"+($(".row").length+1)+"</div><div></div><div></div><div></div></div>");
-    }
-    }
-    $(window).scroll(checkScrollPosition);
-    });
-  </script>
   </body>
 </html>
 {% endblock %}

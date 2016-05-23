@@ -28,3 +28,6 @@
       .container div div{
         border:black 1px solid;
       }
+      .footer p {
+        color:white;
+      }

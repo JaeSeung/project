@@ -16,13 +16,34 @@
      </a>
     </div>
     <div style="width:70%;top:40%;">
-      <li style="margin-left:3em;margin-right:2em">코디</li>
-      <li style="margin-right:2em">상의</li>
-      <li style="margin-right:5em">하의</li>
+      <a href="{% url "product:product_list" %}">
+        <li style="margin-left:3em;margin-right:2em">
+          코디
+        </li>
+      </a>
+      
+      <a href="{% url "product:product_top_list" %}">
+        <li style="margin-right:2em">
+          상의
+        </li>
+      </a>
+      
+      <a href="{% url "product:product_bottom_list" %}" >
+        <li style="margin-right:5em">
+          하의
+        </li>
+      </a>
+      
       <li style="margin-right:1em">Login</li>
+      
       <li style="margin-right:1em">/</li>
+      
       <li style="margin-right:3em">Register</li>
-      <li style="margin-right:10em">브리클로 소개</li>
+
+      <a href="{% url "home:team_introduce" %}">
+        <li style="margin-right:10em">브리클로 소개</li>
+      </a>
+      
       <li>Search</li>
     </div>
   </div>
