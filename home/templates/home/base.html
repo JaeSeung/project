@@ -4,10 +4,28 @@
 <head>
    <meta charset="UTF-8">
     <title>BRICLO</title>
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
  <link rel="stylesheet" type="text/css" href="{% static "home/base.css" %}">
 </head>
+<style type="text/css">
+  .modal-header {
+    background-color: #426399;
+        align-content: center;
+
+ }
+  .modal-header h4 {
+    color:white;
+    font-size: 160%;
+    margin-left:43%;
+  }
+  .form-group  {
+    height:50%;
+  }
+</style>
 <body>
   <div class="bar">
     <div style="width:30%;height:80%;top:10%;left:0%;">
@@ -41,12 +59,18 @@
           SELL
         </li>
       </a>
+            {% comment %}
+                <li style="margin-right:0.3em; margin-top:1.4%">
+                <a href="{% url "logout" %}?next={{request.path}}">
+                logout
+                </a>
+                </li>
+            {% endcomment %}
 
-      <li style="margin-right:0.3em; margin-top:1.4%">Login</li>
-      
-      <li style="margin-right:0.3em; margin-top:1.4%">/</li>
-      
-      <li style="margin-right:2em; margin-top:1.4%">Register</li>
+                <li  style="margin-right:0.3em; margin-top:1.4%"><a  href="#" id="loginBtn" data-toggle="modal" data-target="#loginModal" >login</a></li>
+                <li style="margin-right:0.3em; margin-top:1.4%">/</li>
+                <li style="margin-right:3em; margin-top:1.4%"><a href="{% url 'signup' %}">Register</a></li>
+              
 
       <a href="{% url "home:team_introduce" %}">
         <li style="margin-right:2em; margin-top:1.4%">브리클로 소개</li>
@@ -65,8 +89,10 @@
          <img src = "{% static "home/img/basket_icon.png" %}" width="45%" height="10%"/>
         </span>
         </div>
-      
+
     </div>
   </div>
+
+  {% include 'home/loginModal.html' %}
   {% block content %}
   {% endblock %}

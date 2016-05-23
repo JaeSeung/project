@@ -25,7 +25,8 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', intro, name="intro"),
     url(r'^team/', include('home.urls', namespace="home")),
-    url(r'^product/', include('product.urls', namespace="product"))
+    url(r'^product/', include('product.urls', namespace="product")),
+    url(r'^accounts/', include('accounts.urls')),
 
 ]
 

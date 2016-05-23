@@ -10,5 +10,5 @@ urlpatterns = [
     url(r'^top/(?P<pk>\d+)$', views.product_top_detail, name='product_top_detail'),
     url(r'^bottom/(?P<pk>\d+)$', views.product_bottom_detail, name='product_bottom_detail'),
     #url(r'^(?P<next_pk>\d+)$', views.get_products, name='next-products'),
-
+    url(r'^accounts/', include('accounts.urls')),
 ]

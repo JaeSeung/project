@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     #local
     'product',
     'home',
-
+    'accounts',
 ]
 
 MIDDLEWARE_CLASSES = [
