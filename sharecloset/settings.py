@@ -85,7 +85,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'sharecloset',
-        'USER': 'izr8809',
+        'USER': 'postgres',
         'PASSWORD': 'sksqkqhd1',
         'HOST': 'localhost',
         'PORT': '',
