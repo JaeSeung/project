@@ -84,8 +84,8 @@ WSGI_APPLICATION = 'sharecloset.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'sharecloset',
-        'USER': 'izr8809',
+        'NAME': 'briclo',
+        'USER': 'briclo',
         'PASSWORD': 'sksqkqhd1',
         'HOST': 'localhost',
         'PORT': '',
