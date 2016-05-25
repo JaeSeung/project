@@ -5,10 +5,26 @@ from django.db.models.signals import post_save
 from django.contrib.auth.models import User
 from product.models import Product
 # Create your models here.
-
+GENDER_CHOICES = (
+    		('MEN' , 'MEN'),
+    		('WOMEN' , 'WOMEN'),
+    	)
+SIZE_CHOICES = (
+	('S','S'),
+	('M','M'),
+	('L','L'),
+	('XL','XL'),
+	('XXL','XXL'),
+	('XXXL','XXXL'),
+	)
 
 
 class Profile(models.Model):
+    adress = models.TextField()
+    gender= models.CharField(max_length=6, choices = GENDER_CHOICES, default='MEN')
+    top_size = models.CharField(max_length=6, choices = SIZE_CHOICES, default='M')
+    bottom_size = models.CharField(max_length=6, choices = SIZE_CHOICES, default='M')
+
     user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
 
     # 업주 only

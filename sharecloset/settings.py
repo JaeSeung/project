@@ -37,7 +37,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     #third party
-    'debug_toolbar',
     'bootstrap3',
     #local
     'product',
@@ -82,17 +81,12 @@ WSGI_APPLICATION = 'sharecloset.wsgi.application'
 
 DATABASES = {
     'default': {
-<<<<<<< HEAD
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-=======
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'briclo',
         'USER': 'briclo',
         'PASSWORD': 'sksqkqhd1',
         'HOST': 'localhost',
         'PORT': '',
->>>>>>> fe9299612279ef7a8d3c259777ed9489b76846b0
     }
 }
 
