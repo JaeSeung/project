@@ -26,6 +26,13 @@ def signup(request):
         messages.info(request, "잘못된 접근입니다.")
         return redirect('index')
 
+    
+@login_required #wrapping . login required. login success ->> profile function run
+#decorator  rif user doesn't login -->>redirect login
+def profile(request):
+    return render(request, 'accounts/profile.html')
+
+    
 @login_required
 def profile(request):
 
@@ -33,8 +40,3 @@ def profile(request):
     form = UpdateForm(request.POST, instance=user.profile)
      
     return render(request, 'accounts/profile.html', {'user': user, 'form':form, })
-    
-@login_required #wrapping . login required. login success ->> profile function run
-#decorator  rif user doesn't login -->>redirect login
-def profile(request):
-    return render(request, 'accounts/profile.html')
